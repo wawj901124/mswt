@@ -1,29 +1,4 @@
-现将依赖的环境冷冻起来：pip freeze > requirements.txt
-创建一个新的空虚拟环境：mkvirtualenv blog
-选择新的虚拟环境：workon blog
-安装相关依赖包：pip install -r requirements.txt
-------------------------------------------------------------------------------------------
-终端先切换到如下地址
-(huasheng_django) python@ubuntu:~/Desktop$
-#ubuntu ：是ubuntu系统
-#huasheng_django： 是我创建的虚拟环境的名字
-#Desktop ： 桌面
-
-然后在右侧输入：
-pip freeze > request.txt;
-#request.txt 生成的文件----你快速搭建虚拟环境需要的所有的包
-
-把文件copy到你想搭虚拟环境的电脑里的桌面desktop
-
-创建一个新的空白的虚拟环境，然后终端切到如下地址：
-(xxx) python@ubuntu:~/Desktop$
-#xxx是你新创建的虚拟环境的名字
-然后在右边输入：
-pip install -r request.txt;
-
-OK了，最后测试一下能否实现原来的功能。
---------------------- 
-作者：sui_yi123 
-来源：CSDN 
-原文：https://blog.csdn.net/sui_yi123/article/details/83187530 
-版权声明：本文为博主原创文章，转载请附上博文链接！
+鐜板皢渚濊禆鐨勭幆澧冨喎鍐昏捣鏉ワ細pip freeze > requirements.txt
+鍒涘缓涓�涓柊鐨勭┖铏氭嫙鐜锛歮kvirtualenv blog
+閫夋嫨鏂扮殑铏氭嫙鐜锛歸orkon blog
+瀹夎鐩稿叧渚濊禆鍖咃細pip install -r requirements.txt
