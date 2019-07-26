@@ -1,0 +1,13 @@
+1.需要将工程目录添加到PYTHONPATH中，即添加到python的根目录下
+#在jenkins运行时经常提示找不到包，所以就需要手动添加PYTHONPATH，通过追加sys.path列表来实现
+import os
+import sys
+rootpath=str("D:\seleniumweb\sele")
+syspath=sys.path
+sys.path=[]
+sys.path.append(rootpath)#将工程根目录加入到python搜索路径中
+sys.path.extend([rootpath+i for i in os.listdir(rootpath) if i[0]!="."])#将工程目录下的一级目录添加到python搜索路径中
+sys.path.extend(syspath)
+#追加完成
+
+2.文件里配置的所有相对路径需要修改成绝对路径

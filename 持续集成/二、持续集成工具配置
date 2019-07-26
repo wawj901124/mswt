@@ -1,0 +1,11 @@
+189.你都用过哪些持续集成的工具？
+    Jenkins、Buildbot
+    Travis CI、Strider
+    Go、Integrity
+190.如何搭建Jenkins持续集成平台？
+    下载jenkin.war
+    命令行运行：java -jar jenkins.war
+    在浏览器窗口打开：http://localhost:8080
+191.使用Jenkins都需要做哪些配置？
+    系统级配置
+    工程级配置
