@@ -1,0 +1,12 @@
+127.Instrumentation原理是什么？
+
+128.Instrumentation测试什么？
+    功能性测试
+    Activity生命周期的测试
+    模拟数据库操作的测试和兼容性测试
+
+129.什么情况使用Instrumentation？
+    使用Java Junit框架
+    需要进行白盒测试时
+    需要使用Mock技术模拟系统对象时
+

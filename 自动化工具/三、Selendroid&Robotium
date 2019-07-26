@@ -1,0 +1,10 @@
+133.Selendroid的原理是什么？
+    Selendroid四大组件：
+        Selendroid Client：Webdriver+移动特性的实现
+        Selendroid Server：一个Instrumentation APK
+        AndroidDriver-App：一个WebViewActivity，及浏览器
+        Selendroid-Standalone：大总管，负责准备环境
+134.Robotium的原理是什么？
+    基于Instrumentation进行封装，实现的Android测试框架
+    封装了一个Solo类库，提供自动化测试API
+    由于是基于Instrumentation，测试时需要源码

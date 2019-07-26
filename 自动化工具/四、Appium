@@ -1,0 +1,40 @@
+135.什么是Appium？
+    一个开源的移动端UI自动化测试框架。
+
+136.Appium 的理念是什么？
+    不需要App源码
+    不局限于语言或者框架
+    接口统一，不需要重复开发
+    必须是开源的
+
+137.Appium 相关的概念都有哪些？
+    C/S架构，Appium核心是一个web服务器
+    Session，客户端初始化session与服务端交互
+    Desired Capabilites，初始化时的键值对组合
+    Appium Server，操作与驱动手机的
+    Appium Client，支持多语言调用
+
+138.Appium 环境都包括哪些内容？
+    Android SDK、JDK、Appium
+    Pycharm、Python环境
+    库：Selenium、Appium-Python-Client
+
+139.Appium 都支持哪些开发语言？
+    Java、Javascript、PHP、Python
+    Ruby、C#、Perl、Object C
+
+140.Appium 初始化时都需要配置哪些内容？
+    platformName,目标设备平台Android/iOS
+    platformVersion,目标设备的平台版本
+    deviceName,目标设备名称
+    appPackage,App包名（Android）
+    appActivity,App Activity名称（Android）
+    atomationName,自动u化驱动类型Selendroid/Appium
+    unicodeKeyboard,是否使用Appium 输入法
+    resetKeyboard,是否恢复默认键盘
+
+141.Appium 测试Native App的原理是什么？
+
+142.Appium 测试Hybrid App的原理是什么？
+
+143.Appium 测试iOS App的原理是什么？

@@ -1,0 +1,28 @@
+144.元素的定位、识别工具？
+    第一个选择，使用UIAutomatorViewer
+    第二个选择，使用Appium的Inspector
+145.定位元素的API都有哪些？
+    find_element_by_accessibility_id
+    find_element_by_id
+    find_element_by_name
+    find_element_by_xpath
+    find_element_by_class_name
+
+    find_elements_by_accessibility_id
+    find_elements_by_id
+    find_elements_by_name
+    find_elements_by_xpath
+    find_elements_by_class_name
+
+146.脚本的编写规则
+    LOVE规则
+        L：Location 定位
+        O：Operate 操作
+        V：Verify 验证
+        E：Exception 异常的处理
+
+147.初始化注意事项
+    1.不需要指定App的包路径
+    2.默认使用Appium驱动
+    3.如果需要输入中文，需要添加输入法相关的配置
+

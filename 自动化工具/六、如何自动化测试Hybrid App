@@ -1,0 +1,31 @@
+148.元素的定位、识别工具？
+    1.Native部分， UIAutomator 或者Appium Inspector
+    2.WebView部分，Chrome浏览器的调试模式
+
+149.定位元素的API都有哪些？
+    find_element_by_id
+    find_element_by_name
+    find_element_by_xpath
+    find_element_by_link_text
+    find_element_by_tag_name
+    find_element_by_class_name
+
+    find_elements_by_id
+    find_elements_by_name
+    find_elements_by_xpath
+    find_elements_by_link_text
+    find_elements_by_tag_name
+    find_elements_by_class_name
+
+150.脚本的编写规则
+    S-LOVE 规则：
+        S:Switch  切换
+        L:Locate  定位
+        O：Operate 操作
+        V：Verify 验证
+        E：Exception 异常处理
+
+151.初始化注意事项
+    1.需要明确指定驱动名称为：Selendroid
+    2.需要明确指定App的路径，因为需要重签名
+

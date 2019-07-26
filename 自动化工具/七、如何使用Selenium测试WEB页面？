@@ -1,0 +1,22 @@
+152.都需要准备哪些环境？
+    工具：Pycharm、chrome
+    包：selenium、Python
+    webdriver:chrome driver/firefox driver/ie driver等
+
+153.元素识别工具是什么？
+    firefox或者chrome的调试工具
+
+154.元素定位的方法都有哪些？
+    find_element_by_id
+    find_element_by_name
+    find_element_by_xpath
+    find_element_by_link_text
+    find_element_by_tag_name
+    find_element_by_class_name
+
+    find_elements_by_id
+    find_elements_by_name
+    find_elements_by_xpath
+    find_elements_by_link_text
+    find_elements_by_tag_name
+    find_elements_by_class_name
