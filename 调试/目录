@@ -1,0 +1,13 @@
+一、App的bug调试
+    200.调试App相关的bug常用哪些工具？
+        1.网络相关工具，fiddler、wareshark、Charles
+        2.adb、am、logcat等
+        3.云平台，bug复现
+二、WAP网页的bug调试
+    201.调试WAP页面相关工具有哪些？
+        1.Chrome调试工具，可设置移动APP UA
+        2.WINRE，Web Inspector Remote
+三、PC网页的bug调试
+    202.调试PC页面相关工具有哪些？
+        1.Chrome调试工具
+        2.火狐的firebug
