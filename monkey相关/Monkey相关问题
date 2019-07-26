@@ -1,0 +1,39 @@
+121.Monkey进行压力测试命令？
+    adb shell monkey -p <packagename> <count>
+
+    例如：adb shell monkey -p com.android.calculator2 100  ---运行包名为com.android.calculator2的应用，运行monkey 100次
+
+122.如何重现Crash、ANR过程？
+    添加参数 -s seed
+
+    例如：adb shell monkey -s 6789 -p com.android.calculator2 100    ---运行包名为com.android.calculator2的应用，种子事件数6789个 运行monkey 100次
+
+123.如何提取Crash、ANR的信息？
+    将monkey执行过程中的日志重定向到文件
+    测试版App连接第三方统计平台
+
+    例如：adb shell monkey -v -v -v -s 6789 -p com.android.calculator2 100 >20190726.log   ---monkey日志重定向到20190726.log
+
+124.如何设置Moneky运行8个小时？
+    添加参数  --throttle
+
+    例如：adb shell monkey -v -v -v -s 6789 --throttle 300  -p com.android.calculator2 100   ---时间大致为300*100毫秒
+
+125.在Crash/ANR后，如何继续执行？
+    添加忽略Crash参数   --ignore-crashes
+    添加忽略ANR参数     --ignore-timeouts
+
+    例如：adb shell monkey -v -v -v -s 6789 --throttle 300 --ignore-crashes  --ignore-timeouts -p com.android.calculator2 100   ---添加忽略参数
+126.如何让monkey执行指定的事件？
+    触摸事件   --pct-touch
+    动作事件   --pct-motion
+    轨迹球事件   --pct-trackball
+    基本导航事件   --pct-nav
+    主要导航事件   --pct-majornav
+    系统导航时间   --pct-syskeys
+    应用启动事件   --pct-appswitch
+    其他类型事件   --pct-anyevent
+
+    例如：adb shell monkey -v -v -v -s 6789 --throttle 300 --ignore-crashes  --ignore-timeouts --pct-touch 100 -p com.android.calculator2 100   ---100%执行touch事件
+          adb shell monkey -v -v -v -s 6789 --throttle 300 --ignore-crashes  --ignore-timeouts --pct-touch 50  --pct-motion 50 p com.android.calculator2 100   ---50%执行touch事件,50%执行motion事件
+
