@@ -1,0 +1,11 @@
+163.什么是行为驱动？
+    行为驱动开发，Behavior-Driven Development,简写BDD
+    在软件工程中，BDD是一种敏捷软件开发的技术
+
+164.Lettuce的原理是什么？
+    Lettuce是基于Python语言的行为驱动测试框架
+    Lettuce将测试用例和自动化测试代码分离
+    Lettuce写测试用例就像写文本一样清晰
+
+165.行为驱动的实现？
+    行为驱动测试实例( pip install lettuce)

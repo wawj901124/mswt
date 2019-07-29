@@ -1,0 +1,18 @@
+166.什么是关键字驱动？
+    关键字驱动测试也成为表格驱动测试或行为驱动测试
+    它将创建测试程序的步骤分为规划及实现二个阶段
+    关键字驱动使不懂代码的人可以完成自动化过程
+
+167.Robot Framework 的原理是什么？
+    基于RIDE可视化工具，导入AppiumLibrary
+    使用AppiumLibrary中提供的关键字，实现用例过程
+    使用RIDE完成用例的执行与结果的管理
+
+168.关键字驱动的实现？
+    参考模拟代码实现(
+    1.pip install robotframework
+    2.pip install robotframework-ride)
+    配置网址：https://www.jianshu.com/p/7185c4eb3ca1?from=timeline&isappinstalled=0
+              https://www.jianshu.com/p/5a97d28a596d
+              https://www.cnblogs.com/Lina-zhu/p/9081369.html
+              http://www.apoyl.com/?p=2416

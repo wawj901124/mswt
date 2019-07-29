@@ -1,0 +1,7 @@
+一、unittest原理
+二、DDT-数据驱动
+三、Lettuce-行为驱动(适用与python2,python3暂不支持)
+四、KDT-关键字驱动
+五、生成测试报告
+六、测试邮件通知
+
