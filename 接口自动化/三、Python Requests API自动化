@@ -1,0 +1,10 @@
+183.如何使用Python Requests 发送Get请求？
+    构造Header ：Cookies、Referer、User-Agent
+    构造URL：URL参数
+
+184.如何使用Python Requests 发送Post请求？
+    构造Header：Cookies、Referer、User-Agent
+    构造URL：URL参数
+    构造Data：请求Body
+
+185.如何实现一个API测试框架？

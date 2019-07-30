@@ -1,0 +1,12 @@
+179.如何使用PostMan发送Get/Post请求？
+    1.构造URL（Get&Post）
+    2.构造参数（Get&Post）
+    3.构造数据（Post）
+
+180.如何为PostMan用例添加检查点？
+    1.添加返回值检查点
+    2.添加状态码检查点
+181.如何使用PostMan批量运行测试用例？
+    1.创建Collections
+    2.运行Collections
+    3.收集Collections结果

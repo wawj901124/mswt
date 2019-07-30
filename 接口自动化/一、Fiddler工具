@@ -1,0 +1,43 @@
+173.如何使用Fiddler抓取手机上的数据包？
+    1.PC端设置
+    2.手机端设置
+
+174.数据包中都包含哪些内容？
+    1.状态码、协议类型
+    2.Request(Header:User-Agent,Cookies,Referer)
+    3.Respinse(Header,Data)
+
+175.如何设置AutoResponder?
+    1.抓取请求
+    2.制作数据
+    3.设置规则
+
+176.如何使用Fiddler发送Get/Post请求？
+    1.构造URL（Get&Post）
+    2.构造参数（Get&Post）
+    3.构造数据（Post）
+
+177.如何使用Fiddler构造慢网络？
+    1.Rules->Performances->Simulate Modem Speeds
+    2.修改代码，配置需要的速度
+        Rules->Customize Rules
+        if (m_SimulateModem) {
+            // Delay sends by 300ms per KB uploaded.
+            oSession["request-trickle-delay"] = "300";  默认为1kb300毫秒，可以修改为发送传输1KB需要3000毫秒
+            // Delay receives by 150ms per KB downloaded.
+            oSession["response-trickle-delay"] = "15000";   默认为1kb150毫秒，可以修改为接受传输1KB需要1500毫秒
+        }
+
+178.如何使用Fiddler抓取https包？
+    1.Fiddler https相关设置
+        Tools->Options->HTTPS:
+            勾选：Capture HTTPS CONNECTS
+            勾选：Decrypt HTTPS traffic
+            勾选： Ignore server certificate errors（unsafe）
+        Tools->Options->Connections:
+            勾选：Allow remote computers to connect
+            其他默认
+    2.在浏览器中安装证书
+        手机端wifi连接与电脑端同路由，且配置电脑IP地址的端口8888
+        手机端打开浏览器，输入http://电脑IP：8888/
+        选择2中的文件连接，安装证书：给证书随便起个名字，确定即可
