@@ -1,0 +1,72 @@
+112.如何重启adb服务？
+    adb kill-server
+    adb start-server
+
+113.App的安装与卸载？
+    adb -s <devicename> install <path-to-apk>
+    adb -s <devicename> install  -r <path-to-apk>
+    adb -s <devicename> uninstall  <packagename>
+    adb -s <devicename> uninstall -k  <packagename>
+
+    例如： adb -s 192.56.101:5555 install app-debug.apk
+           adb -s 192.56.101:5555 install app-debug.apk
+           adb -s 192.56.101:5555 install -r app-debug.apk
+           adb logcat | findstr START
+           adb logcat | grep START
+           adb -s 192.56.101:5555 uninstall com.example.zhangjian.minibrowser2
+           adb -s 192.56.101:5555 uninstall  -k com.example.zhangjian.minibrowser2
+
+114.如何在电脑和手机之间传输数据？
+    adb push D;\test.apk /data/local/tmp/test.apk
+    adb pull /dada/local/tmp/test.txt D:\
+
+    例如： adb push app-debug.apk /data/local/tmp/app-debug.apk
+           adb shell
+           cd data/local/tmp/
+           ls
+           exit
+           adb pull /data/local/tmp/AppiumBootstrap.jar
+           ll AppiumBootStrap.jar.
+
+115.如何静默安装App？
+    adb push D:\test.apk /data/temp/test.apk
+    adb shell pm install -f /data/temp/test.apk
+
+    例如： adb push app-debug.apk /data/local/tmp/app-debug.apk
+           adb shell pm install -f /data/local/tmp/app-debug.apk
+
+116.如何使用adb启停一个App？
+    adb shell am start -W -S package/activity
+    adb shell am force-stop package
+
+    例如： adb shell am start -W -S com.android.calculator2/.Calculator
+           adb shell am start -W  com.android.calculator2/.Calculator
+           adb shell am start -W -S com.android.calculator2/.Calculator
+           adb shell am force-stop com.android.calculator2
+
+117.如何通过某个关键字查找已安装的包？
+    adb shell pm list package -f keyword
+    adb shell pm list package -3 keyword
+    adb shell pm list package -i keyword
+
+    例如： adb shell pm list package -f calculator2
+           adb shell pm list package -3 calculator2
+           adb shell pm list package -i calculator2
+
+118.如何截屏、录屏？
+    adb shell screencap /data/loca/tmp/screen.png
+    adb shell screenrecord /data/local/tmp/demo.mp4
+119.如何抓取logcat日志？
+    adb logcat
+    adb shell logcat
+
+    例如： adb logcat | grep START
+
+120.如何获取当前的cpu、内存状态？
+    adb shell dumpsys meminfo package
+    adb shell dumpsys cupinfo | findstr package
+
+    例如： adb shell dumpsys meminfo com.android.calculator2
+           adb shell dumpsys cpuinfo com.android.calculator2
+           adb shell dumpsys cpuinfo
+           adb shell dumpsys cpuinfo | grep calculator2

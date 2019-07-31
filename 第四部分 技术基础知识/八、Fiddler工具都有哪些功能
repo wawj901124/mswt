@@ -1,0 +1,27 @@
+101.如何抓取手机包？
+    1.fiddler工具options中connections项中勾选Allow remote computers to connect；
+    2.手机与电脑同路由；
+    3.手机wifi设置代理，IP为fiddler工具所在电脑的ip,端口为fiddler工具options中connections项中Fiddler listens on port 中的内容
+
+102.如何配置fake response、fake rewuest?
+    1.抓取请求；
+    2.在AutoResponder 中 添加规则，使用规则；
+
+103.数据包request、response中的字段含义？
+    1.抓取请求
+    2.在Inspectors中查看请求和响应的内容；
+    3.在Composer中发送get、post等请求；
+
+104.如何实现慢网速？
+    1.Rules -》Performance -》Simulate Modem Speeds
+    2.在FiddlerScript中设置，查找到"m_SimulateModem",配置发送和接受速率（传送1KB需要多少毫秒）
+        默认发送300毫秒，接受150毫秒
+
+105.如果抓取的数据过多怎么处理？
+    1.在Filters中勾选Use Filters ;
+    2.Hosts中选择 Show only the following Hosts
+    3.填写Hosts内容：例如：www.sugou.com;m.imoov.com;
+    4.点击 Actions，应用规则
+
+106.模拟不同的状态码，200、302、404、502
+    1.在AutoResponder中最后一行可以选择状态码

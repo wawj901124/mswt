@@ -1,0 +1,30 @@
+107.Android的四大组件是什么？
+    Activity： 程序与用户的交互窗口
+    Service： 在程序后台，完成用户的操作
+    ContentProvider： 提供数据的统一格式访问
+    BroadcastReceiver： 应用程序之间传输信息的机制
+108.Activity的生命周期是什么？
+    Activity starts -> onCreate()->onStart()->onResume()->Activity is running ---Another activity comes in front of the activity---> onPause() --
+    -The activity is no longer visible--->onStop() ->onDestroy()->Activity is shut down
+
+    onPause()---Other applications need memory--->Process is killed ---User navigates back to the activity--->onCreate()
+    onPause()---The acitivty comes to the foreground--->OnResume()
+
+    onStop()---Other applications need memory--->Process is killed ---User navigates back to the activity--->onCreate()
+    onStop()---The activity comes to the foreground--->onRestart()->onStart()
+
+109.什么是ANR？
+    ANR:Application Not Responding
+    Activity 的最长执行时间是5秒
+    用户可以选择“等待”让程序继续运行，或“强制关闭”
+
+110.Android常见的五种布局是什么？
+    FrameLayout（框架布局）
+    LinearLayout（线性布局）
+    AbsoluteLayout(绝对布局)
+    RelativeLayout（相对布局）
+    TableLayout（表格布局）
+
+111.Android中动画有哪几种类型？
+    Tween动画， 组件移动、缩放、透明度的变化
+    Frame动画， 通过顺序播放来实现，类似电影

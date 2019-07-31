@@ -1,0 +1,95 @@
+81.基础命令
+    cd   切换目录
+    ls -l  列出文件详细信息
+    ls -a  列出当前目录下所有文件
+    touch  创建文件
+    mkdir  创建目录
+    例如：touch mook
+          ls -l
+          la -a
+          mkdir mooktest
+          ls
+          cd mooktest
+
+    echo  创建带有内容的文件
+    cat  查看文件内容
+    cp 拷贝
+    例如： echo "hello mook" > mookhello
+            ls
+            cat mookhello
+            cp mookhello mook2
+            ls -l
+            cat mook2
+            clear
+
+    mv  移动或重命名
+    rm -r  递归删除
+    rm -f  强制删除
+    wc  统计文本中行数、字数、字符数
+    例如： wc mookhello
+           cat mookhello
+           ls -a
+           mv mook2 mook3
+           ls -a
+           rm -f mook
+           cd mooktest
+           touch test
+           ls
+           cd ..
+           ls -a
+           rm -f mooktest
+           rmdir -f mooktest
+           rm -r mooktest
+           ls
+
+    grep  在文本文件中查找某个字符串
+    tree  显示目录结构
+    ln  创建软链
+    例如：ln -s mookhello mook2
+           ls
+           cat mook2
+           ls -a
+           ls -l
+           tree
+           grep mook mookhello
+           vi mookhello
+           grep hello2 mookhello
+
+    more、less  分页显示文本内容
+    head、tail  显示文件头尾内容
+    例如：head mookhello
+          head -1 mookhello
+          head -2 mookhello
+          tail -2 mookhello
+          more mookhello
+          less mookhello
+
+82.网络命令
+    curl  利用URL规则在命令行下工作的文件传输工具
+    netstat  显示网络状态信息
+    telnet  用于登录远程主机
+    例如：curl www.mook.com
+          telnet 127.0.0.1
+          netstat
+
+83.系统命令
+    ping  测试网络连通
+    man  查看帮助
+    kill  杀死进程
+    例如： man ping
+           ping www.baidu.com
+           kill pid
+           top
+           kill 38970
+
+    top  动态显示当前耗费资源最多进程信息
+    ps  显示瞬间进程状态
+    df  查看磁盘大小
+    df -h  带有单位显示磁盘信息
+    例如：top
+          ps
+          kill 3667
+          df
+          df -h
+
+

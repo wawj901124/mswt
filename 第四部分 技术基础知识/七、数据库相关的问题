@@ -1,0 +1,40 @@
+98.如何创建一个数据库？
+    create database  数据库名；
+    例如：show databases；
+          drop database mookdata；
+          show databases；
+          create databse mookdata；
+
+99.如何创建一个数据表？
+    create table 表名；
+    create table class(
+    -> id int(4) not null primary key auto_increment,
+    -> name char(20) not null);
+    show tables;
+    例如：system clear;
+          use mookdata;
+          show tables;
+          create table class(
+          -> id int(4) not null primary key auto_increment,
+          -> name char(20) not null);
+          show tables;
+
+100.如何操作数据表中的数据？
+    插入： inser into 表名 values(内容);
+    例如：insert into class values(1,"慕课网面试课程");
+          select * from class;
+
+    查询： select * from 表名 where 条件;
+    例如：select * from class where name="慕课网面试课程";
+          insert into class values(2,"慕课网专项测试-python版");
+          select * from class;
+          select * from class where name="慕课网面试课程";
+          select * from class where id=2;
+
+    更新： updata class set 字段=新值 where 条件;
+    例如：updata class set name="Andorid专项测试-Python篇" where id=1;
+          select * from class;
+
+    删除： drop table 表名；
+    例如：drop table class;
+          show tables;
