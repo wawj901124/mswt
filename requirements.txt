@@ -27,7 +27,7 @@ packaging==19.0
 pbr==5.4.1
 Pillow==6.1.0
 progress==1.5
-py==1.8.0
+py==1.10.0
 pycparser==2.19
 Pygments==2.4.2
 pyparsing==2.4.1.1
